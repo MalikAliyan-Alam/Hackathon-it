@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food App</title>
+  <title>Post App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- <h1>Hello World!</h1> -->
+  <h1>ALI-Stack</h1>
 
 
   <div id="app">
     <!-- Login Page -->
 
     <div id="login-page" class="page">
-      <h2>Login</h2>
+      <h1>Login</h1>
       <form id="login-form">
 
         <input type="text" required
@@ -31,7 +31,7 @@
 
     <div id="signup-page" class="page hidden">
 
-      <h2>Sign Up</h2>
+      <h1>Sign Up</h1>
       <form id="signup-form">
 
         <input type="text" required placeholder="Username"
@@ -59,29 +59,29 @@
           <span id="logged-in-user">Welcome, </span>
         </div>
 
-        <h2>Food Dashboard</h2>
+        <h1>Posting Dashboard</h1>
         <button id="logout-btn" onsubmit="logoutBtn()">Logout</button>
       </header>
 
       <div class="dashboard-content">
 
-        <div class="food-form-section">
-          <h3>Add new Food</h3>
-          <form id="food-forms">
+        <div class="post-form-section">
+          <h3>Create a new Post</h3>
+          <form id="post-forms">
 
-            <input type="hidden" id="food-id">
-            <input type="text" id="food-name"
-            placeholder="Food Name" required>
-            <textarea id="food-description"
+            <input type="hidden" id="post-id">
+            <input type="text" id="post-name"
+            placeholder="Post Name" required>
+            <textarea id="post-description"
             placeholder="Description"></textarea>
-            <input type="text" id="food-image"
+            <input type="text" id="post-image"
             placeholder="Image URL (Optional)">
-            <button id="food-form-button" type="submit" onclick="dashManager()">Add Food</button>
+            <button id="post-form-button" type="submit" onclick="dashManager()">Add Post</button>
           </form>
         </div>
 
         <div class="foods-list-secion">
-          <h3>Your Foods</h3>
+          <h3>Your Posts</h3>
           <div id="foods-list" class="foods-grid"></div>
         </div>
       </div>
